@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Round Robin Scheduling</title>
+    <link rel="stylesheet" href="./advanceClaim.css">
+    <!-- Favicons -->
+  <link href="assets/img/ubuntu_logo.png" rel="icon">
+  <link href="assets/img/ubuntu_logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Valera - v4.7.0
+  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body style="text-align: center;">
+     <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">TEAM AMIGOS</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto " href="commands.html">Commands</a></li>
+          <li><a class="nav-link scrollto" href="multithreading.html">Multithreading</a></li>
+          <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>CPU Scheduling Algorithms</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="roundrobin.html">Round Robin</a></li>
+              <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+              <li><a href="fcfs.html">FCFS</a></li>
+              <li><a href="sjf.html">SJF</a></li>
+              <!--<li><a href="#">Drop Down 4</a></li>-->
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="advanceClaim.html">Banker's Algorithm</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <div class="header-social-links d-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>
+
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+      <!-- Background Animation Starts -->
+    <div class="container">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- Background Animation Ends -->
+
+    <h1 style="color: green;">
+       Round Robin Scheduling
+    </h1>
+    <h3 id="poa">Input Burst time</h3>
+    <form class="" action="roundrobin.html" method="post">
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+        <button type="button" name="button" onclick="Geekss()">
+            Submit
+        </button>
+        <INPUT TYPE="button" onClick="history.go(0)" VALUE="Reset">
+    </form>
+    <br>
+    <br>
+    <br>
+    <!--<h3 id="po">Input Arrival  time</h3>
+    <form class="" action="roundrobin.html" method="post">
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <button type="button" name="button" onclick="Geekss()">
+            Submit     
+        </button>-->
+    </form>
+    <br>
+    <br>
+    <p id="para">
+        <div id="outputDiv"></div>
+    </p>
+    
+    <!--<p id="paraa"></p>-->
+    <script>
+        
+        function Geekss() {
+            var k = "The respective values are of burst time are :";
+            var input = document.getElementsByName('bt[]');
+           // var inputtwo = document.getElementsByName('at[]');
+            for (var i = 0; i < input.length; i++) {
+                var a = input[i];
+                k = k + "bt[" + i + "].value= "
+                                   + a.value + " ";
+            }
+            /*for (var i = 0; i < inputtwo.length; i++) {
+                var aa = inputtwo[i];
+                ka = ka + "at[" + i + "].value= "
+                                   + aa.value + " ";
+            }*/
+           
+           //document.getElementById("poa").innerHTML = "Output";  
+           
+           // document.getElementById("po").innerHTML = "Output";
+           
+             document.getElementById("para").innerHTML = k;
+           //  document.getElementById("paraa").innerHTML = ka;
+           processes = ['P0', 'P1','P2', 'P3','P4'];
+        let n = processes.length;
+    
+        // Burst time of all processes
+        let burst_time = [(parseInt(input[0].value)),(parseInt(input[1].value)),(parseInt(input[2].value)),(parseInt(input[3].value)),(parseInt(input[4].value))];
+    
+        // Time quantum
+        let quantum = 2;
+        findavgTime(processes, 5, burst_time, quantum);
+        }
+        // JavaScript program for implementation of RR scheduling
+    
+        // Function to find the waiting time for all
+        // processes
+        const findWaitingTime = (processes, n, bt, wt, quantum) => {
+            // Make a copy of burst times bt[] to store remaining
+            // burst times.
+            let rem_bt = new Array(n).fill(0);
+            for (let i = 0; i < n; i++)
+                rem_bt[i] = bt[i];
+    
+            let t = 0; // Current time
+    
+            // Keep traversing processes in round robin manner
+            // until all of them are not done.
+            while (1) {
+                let done = true;
+    
+                // Traverse all processes one by one repeatedly
+                for (let i = 0; i < n; i++) {
+                    // If burst time of a process is greater than 0
+                    // then only need to process further
+                    if (rem_bt[i] > 0) {
+                        done = false; // There is a pending process
+    
+                        if (rem_bt[i] > quantum) {
+                            // Increase the value of t i.e. shows
+                            // how much time a process has been processed
+                            t += quantum;
+    
+                            // Decrease the burst_time of current process
+                            // by quantum
+                            rem_bt[i] -= quantum;
+                        }
+    
+                        // If burst time is smaller than or equal to
+                        // quantum. Last cycle for this process
+                        else {
+                            // Increase the value of t i.e. shows
+                            // how much time a process has been processed
+                            t = t + rem_bt[i];
+    
+                            // Waiting time is current time minus time
+                            // used by this process
+                            wt[i] = t - bt[i];
+    
+                            // As the process gets fully executed
+                            // make its remaining burst time = 0
+                            rem_bt[i] = 0;
+                        }
+                    }
+                }
+    
+                // If all processes are done
+                if (done == true)
+                    break;
+            }
+        }
+    
+        // Function to calculate turn around time
+        const findTurnAroundTime = (processes, n, bt, wt, tat) => {
+            
+            // calculating turnaround time by adding
+            // bt[i] + wt[i]
+            for (let i = 0; i < n; i++)
+                tat[i] = bt[i] + wt[i];
+        }
+        
+        // Function to calculate average time
+        const findavgTime = (processes, n, bt, quantum) => {
+            document.getElementById("outputDiv").innerHTML +="<b>";
+            document.getElementById("outputDiv").innerHTML +="<center>";
+            let wt = new Array(n).fill(0), tat = new Array(n).fill(0);
+            let total_wt = 0, total_tat = 0;
+    
+            // Function to find waiting time of all processes
+            findWaitingTime(processes, n, bt, wt, quantum);
+    
+            // Function to find turn around time for all processes
+            findTurnAroundTime(processes, n, bt, wt, tat);
+    
+            // Display processes along with all details
+            document.getElementById("outputDiv").innerHTML +='PN BT WT TAT <br/>';
+            document.getElementById("outputDiv").innerHTML +='<br>'
+    
+            // Calculate total waiting time and total turn
+            // around time
+            for (let i = 0; i < n; i++) {
+                total_wt = total_wt + wt[i];
+                total_tat = total_tat + tat[i];
+    
+                document.getElementById("outputDiv").innerHTML +=`${i + 1} ${bt[i]} ${wt[i]} ${tat[i]}<br/>`;
+                document.getElementById("outputDiv").innerHTML +='<br>';
+            }
+    
+            document.getElementById("outputDiv").innerHTML +=`Average waiting time = ${total_wt / n}`;
+            document.getElementById("outputDiv").innerHTML +='<br>';
+            document.getElementById("outputDiv").innerHTML +=`<br/>Average turn around time = ${total_tat / n}`;
+            document.getElementById("outputDiv").innerHTML +='<br>';
+            document.getElementById("outputDiv").innerHTML +=`<br/>PN : Process Number<br/> <br/> BT : Burst time<br/><br/> WT : Waiting time<br/><br/> TAT : Turn around time<br/>`;
+            document.getElementById("outputDiv").innerHTML +='<br>';
+            document.getElementById("outputDiv").innerHTML +="<center/>";
+            document.getElementById("outputDiv").innerHTML +="<b/>";
+        }
+    
+        // Driver code
+        // process id's
+      
+        
+        // This code is contributed by rakeshsahni
+    
+    </script>
+    </main>
+    <footer id="footer">
+
+        <div class="footer-top">
+    
+          <div class="container">
+    
+            <div class="row  justify-content-center">
+              <div class="col-lg-6">
+                <h3>Team Amigos</h3>
+                <!--<p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>-->
+                <p class="text-center mb-0 py-3">&copy; Copyright Team amigos 2021 | All Rights Reserved</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+    
+</body>
+</html>
