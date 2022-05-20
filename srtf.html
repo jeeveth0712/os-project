@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> SRTF Scheduling </title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="index.css"></link>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Multithreading</title>
+	<link rel="stylesheet" href="./advanceClaim.css">
+	 <!-- Favicons -->
+  <link href="assets/img/ubuntu_logo.png" rel="icon">
+  <link href="assets/img/ubuntu_logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Valera - v4.7.0
+  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body>
+
+  <header id="header" class="d-flex align-items-center ">
+	<div class="container-fluid d-flex align-items-center justify-content-lg-between">
+
+	  <h1 class="logo me-auto me-lg-0"><a href="index.html"></a></h1>
+	  <!-- Uncomment below if you prefer to use an image logo -->
+	  <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+	  <nav id="navbar" class="navbar order-last order-lg-0">
+		<ul>
+		  <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+		  <li><a class="nav-link scrollto " href="commands.html">Commands</a></li>
+		  <li><a class="nav-link scrollto" href="multithreading.html">Multithreading</a></li>
+		  <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>CPU Scheduling Algorithms</span> <i class="bi bi-chevron-down"></i></a>
+			<ul>
+			  <li><a href="rr.html">Round Robin</a></li>
+			  <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+				<ul>
+				  <li><a href="#">Deep Drop Down 1</a></li>
+				  <li><a href="#">Deep Drop Down 2</a></li>
+				  <li><a href="#">Deep Drop Down 3</a></li>
+				  <li><a href="#">Deep Drop Down 4</a></li>
+				  <li><a href="#">Deep Drop Down 5</a></li>
+				</ul>
+			  </li>-->
+			  <li><a href="fcfs.html">FCFS</a></li>
+			  <li><a href="sjf.html">SJF</a></li>
+			  <li><a href="priority.html">Priority</a></li>
+			  <li><a href="srtf.html">SRTF</a></li>
+			  <!--<li><a href="#">Drop Down 4</a></li>-->
+			</ul>
+		  </li>
+		  
+		  <li><a class="nav-link scrollto" href="advanceClaim.html">Banker's Algorithm</a></li>
+		  <li><a class="nav-link scrollto" href="lruindex.html">Page Replacement Algorithms</a></li>
+		  <li><a class="nav-link scrollto" href="disk.html">Disk Scheduling Algorithms</a></li>
+		  <li><a class="nav-link scrollto" href="mft.html">Memory Allocations</a></li>
+		  <li><a class="nav-link scrollto" href="contents.html">Team</a></li>
+		</ul>
+		<i class="bi bi-list mobile-nav-toggle"></i>
+	  </nav><!-- .navbar -->
+
+	  <!--<div class="header-social-links d-flex align-items-center">
+		<a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+		<a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+		<a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+		<a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+	  </div>-->
+
+	</div>
+  </header><!-- End Header -->
+  <main id="main">
+	  <!-- Background Animation Starts -->
+	<div class="container">
+		<ul class="circles">
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		  <li></li>
+		</ul>
+	  </div>
+	  <!-- Background Animation Ends -->
+    <br>
+	<div class="container">
+		<!-- Input section -->
+		<div class="jumbotron">
+            <h1 class="display-3">SRTF Scheduling</h1>
+            <br>
+			<div id="showinput"></div>
+			<hr>
+			<div class="row">
+				<div class="form-group" style="margin-left:50px; float:left;  width: 20%">
+                    <label class="col-form-label" for="inputDefault">Arrival time:</label>
+                    <input class="form-control" id="newat" name="at" placeholder="Arrival Time" type="text" size="35">
+                </div>
+				<div class="form-group" style="margin-left:50px; float:left;  width: 20%">
+					<label class="col-form-label" for="inputDefault">Burst time:</label>
+					<input class="form-control" id="newbt" name="bt" placeholder="Burst Time" type="text" size="35">
+				</div>
+			</div>
+            <button type="submit" id="add" class="btn btn-primary" style="margin-left: 36px" onclick="addToList()">Add</button>
+			<br>
+			<button type="submit" id="clear" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="clearData()">Clear Data</button>
+			<button type="submit" id="run" class="btn btn-primary" style="margin-left: 36px; float: right;" onclick="showOutput(2)">Schedule It!</button>
+		</div>
+		<!-- Gantt Chart -->
+		<div style="margin-top: 150px;">
+			<h2 id ="chart-header" style="text-align:center;"></h2>
+			<br />
+			<div id="gantt"></div>
+			<div id="timer"></div>
+			<br /><br />
+			<div>
+				<div style="width: 50%; text-align:center;float:left; font-size: 20px;" id="awt1"></div>
+				<div style="width:50%; text-align:center;float:left;font-size:20px;" id="atat1"></div>
+            </div>
+        </div>
+		<!-- CPU Operations -->
+		<div style="margin-top: 100px;">
+			<h3 id="operations-heading" style="text-align:center;"></h3>
+			<div id="operations"></div>
+		</div>
+		<!-- Table -->
+		<div style="margin-top: 50px;">
+			<h2 id="table-heading" style="text-align:center;"></h2>
+			<div>
+				<table id="tab" class="table table-striped centered responsive-table" style="border-color: black; border-width: 2px; align: center; bgcolor: white; cellspacing: 10px;">
+					<thead id="thead"></thead>
+					<tbody id="ptable"></tbody>
+				</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

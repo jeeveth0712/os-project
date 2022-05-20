@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>First Come First Serve</title>
+    <link rel="stylesheet" href="./advanceClaim.css">
+     <!-- Favicons -->
+  <link href="assets/img/ubuntu_logo.png" rel="icon">
+  <link href="assets/img/ubuntu_logo.png" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Valera - v4.7.0
+  * Template URL: https://bootstrapmade.com/valera-free-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+<body style="text-align: center;">
+     <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid d-flex align-items-center justify-content-lg-between">
+
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">TEAM AMIGOS</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto " href="commands.html">Commands</a></li>
+          <li><a class="nav-link scrollto" href="multithreading.html">Multithreading</a></li>
+          <li class="dropdown"><a href="#" class="nav-link scrollto active"><span>CPU Scheduling Algorithms</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="Process Scheduling/src/rr.html">Round Robin</a></li>
+              <!--<li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>-->
+              <li><a href="Process Scheduling/src/fcfs.html">FCFS</a></li>
+              <li><a href="sjf.html">SJF</a></li>
+              <li><a href="Process Scheduling/src/priority.html">SJF</a></li>
+              <li><a href="Process Scheduling/src/srtf.html">SJF</a></li>
+              <!--<li><a href="#">Drop Down 4</a></li>-->
+            </ul>
+          </li>
+          
+          <li><a class="nav-link scrollto" href="advanceClaim.html">Banker's Algorithm</a></li>
+          <li><a class="nav-link scrollto" href="page replacement/lruindex.html">Page Replacement Algorithms</a></li>
+          <li><a class="nav-link scrollto" href="Disk/disk.html">Disk Scheduling Algorithms</a></li>
+          <li><a class="nav-link scrollto" href="MFT/index.html">Memory Allocations</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+      <!--<div class="header-social-links d-flex align-items-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></i></a>
+      </div>-->
+
+    </div>
+  </header><!-- End Header -->
+  <main id="main">
+      <!-- Background Animation Starts -->
+    <div class="container">
+        <ul class="circles">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <!-- Background Animation Ends -->
+    
+</head>
+<body style="text-align: center;">
+    <h1 style="color: green;">
+        First Come First Serve
+    </h1>
+    <h3 id="poa">Input Burst time</h3>
+    <form class="" action="fcfs.html" method="post">
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+        <input type="text" name="bt[]" value="" /><br>
+      <!--  <button type="button" name="button" onclick="Geekss()">
+            Submit
+        </button>-->
+    </form>
+    <br>
+    <br>
+    <br>
+    <h3 id="po">Input Arrival time</h3>
+    <form class="" action="fcfs.html" method="post">
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <input type="text" name="at[]" value="" /><br>
+        <button type="button" name="button" onclick="Geekss()">
+            Submit
+            
+        </button>
+        <INPUT TYPE="button" onClick="history.go(0)" VALUE="Reset">
+    </form>
+    <br>
+    <br>
+    <p id="para"></p>
+    <p id="paraa"></p>
+    <p id="paara"></p>
+    <p id="paaraa"></p>
+    <p id="paaraaa"></p>
+    <script type="text/javascript">
+        var k = "The respective values are of burst time are :";
+        var ka = "The respective values are of arival time are :";
+        var kaa = "The respective values are of completion time are :";
+        var kaaa="The respective values of turn around time are : ";
+        var kaaaa="The respective values of waiting time are : ";
+        function Geekss() {
+            var input = document.getElementsByName('bt[]');
+            var inputtwo = document.getElementsByName('at[]');
+            for (var i = 0; i < input.length; i++) {
+                var a = input[i];
+                k = k + "bt[" + i + "].value= "
+                                   + a.value + " ";
+            }
+            for (var i = 0; i < inputtwo.length; i++) {
+                var aa = inputtwo[i];
+                ka = ka + "at[" + i + "].value= "
+                                   + aa.value + " ";
+            }
+           
+           //document.getElementById("poa").innerHTML = "Output";  
+           
+           // document.getElementById("po").innerHTML = "Output";
+           
+             document.getElementById("para").innerHTML = k;
+             document.getElementById("paraa").innerHTML = ka;
+           
+            var ct=[(parseInt(inputtwo[0].value)+parseInt(input[0].value)),(parseInt(input[1].value)+parseInt(input[0].value)),(parseInt(input[2].value)+parseInt(input[1].value)+parseInt(input[0].value)),(parseInt(input[3].value)+parseInt(input[2].value)+parseInt(input[1].value)+parseInt(input[0].value)),(parseInt(input[4].value)+parseInt(input[3].value)+parseInt(input[2].value)+parseInt(input[1].value)+parseInt(input[0].value))];
+           // console.log(ct);
+            //var inputthree=ct;
+            // ct[0]=at[0]+bt[0];
+            // ct[1]=bt[1]-bt[0];
+            // ct[2]=bt[2]-bt[1];
+            // ct[3]=bt[3]-bt[2];
+            // ct[4]=bt[4]-bt[3];
+           // var sum=0;
+            for( var j=0;j<5;j++){
+                //console.log(sum);
+                   kaa=kaa+parseInt(ct[j]) + " , ";
+            }
+            //kaa=kaa+sum;
+            document.getElementById("paara").innerHTML=kaa;
+            
+           var tat=[(ct[0]-parseInt(inputtwo[0].value)),(ct[1]-parseInt(inputtwo[1].value)),(ct[2]-parseInt(inputtwo[2].value)),(ct[3]-parseInt(inputtwo[3].value)),(ct[4]-parseInt(inputtwo[4].value))];
+           for( var j=0;j<5;j++){
+               // console.log(sum);
+                   kaaa=kaaa+parseInt(tat[j]) + " , ";
+            }
+            document.getElementById("paaraa").innerHTML=kaaa;
+            var wt=[(tat[0]-parseInt(input[0].value)),(tat[1]-parseInt(input[1].value)),(tat[2]-parseInt(input[2].value)),(tat[3]-parseInt(input[3].value)),(tat[4]-parseInt(input[4].value))];
+            for( var j=0;j<5;j++){
+               // console.log(sum);
+                   kaaaa=kaaaa+parseInt(wt[j]) + " , ";
+            }
+            document.getElementById("paaraaa").innerHTML=kaaaa;
+    }
+  
+    </script>
+    </main>
+    <footer id="footer">
+
+        <div class="footer-top">
+    
+          <div class="container">
+    
+            <div class="row  justify-content-center">
+              <div class="col-lg-6">
+                <h3>Team Amigos</h3>
+                <!--<p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>-->
+                <p class="text-center mb-0 py-3">&copy; Copyright Team amigos 2021 | All Rights Reserved</p>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div id="preloader"></div>
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  
+    <!-- Vendor JS Files -->
+    <script src="assets/vendor/purecounter/purecounter.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
+  
+</body>
+</html>
